@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', system-ui;
-  align-content: center;
-}
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui;
 
-
+  }
 body {
-  /*! display: flex; */
+
   flex-wrap: wrap;
-  /*! margin-top: 36px; */
-  /*! max-width: 1200px; */
 }
 .row {
   width: 100%;
@@ -66,7 +62,9 @@ display: none;
   font-size: 40px;
   color: white;
 }
-
+section  {
+  margin: 56px 0;
+}
 
 .btn__menu--close {
   position: absolute;
@@ -78,6 +76,8 @@ color: white;
 }
 .landing__flex--container {
   margin-top: 24px;
+  width: 100%;
+  display: flex;justify-content: space-between;
 }
 
 .nav {
@@ -125,7 +125,8 @@ cursor: pointer;
   background-color: #6f36df;
 color:rgb(240, 226, 226);
 }
-.nav__link--wrapper {
+.nav__logo--wrapper {
+  display: flex;
   width: 100%;
 }
 
@@ -167,6 +168,10 @@ color:rgb(240, 226, 226);
 .header__design--img {
   width: 50%;
 }
+.header__design--img > img:nth-child(1) {
+  width: 100%;
+}
+
 .header__row--row {
   display: flex;
   align-items: center;
@@ -181,7 +186,7 @@ color:rgb(240, 226, 226);
   justify-content: space-between;
 }
 .header__right {
-  width: 50%;
+  width: 100%;
 }
 
 .header__description {
@@ -232,14 +237,7 @@ color: #fff;
 .header__customers--logo__img > img:nth-child(1) {
   width: 100%;
 }
-.header__customers--logo__img,
-.header__design--img,
-.header__design--img > img:nth-child(1),
-.header__right {
-  width: 100%;
-}
-
-/*--------------------------
+--------------
 ----------------------------
 -------------FEATURES-------
 ----------------------------
@@ -481,6 +479,10 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
 --------------VALUE----------
 -----------------------------
 ---------------------------*/
+.value__row {
+  width: 50%;
+  
+}
 
 
 .value__container--row {
@@ -502,10 +504,7 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
 
 
 .value__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  width: 50%;
 }
 
 
@@ -526,6 +525,7 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
     .value__cards {
       display: flex;
       margin-bottom: 30px;
+      justify-content: space-between;
     }
     .value__card {
       display: flex;
@@ -555,23 +555,18 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
     -------------------------
     -----------------------*/
     #pricing {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-      display: flex;
-      align-content: center;
-      justify-content: center;
-    }
-    
+      width: 100%;
+      margin: 0 auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
     .pricing__row {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .pricing__container {
-      max-width: 1200px;
-    }
-    
+ 
     .pricing_top {
     
     display: flex;
@@ -582,9 +577,7 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
       font-size: 16px;
     }
     .pricing__middle {
-      display: grid;
-       align-content: space-between;
-       justify-content: space-between;
+      text-align: center;
      }
     .pricing__bottom {
     align-content: center;
@@ -597,7 +590,6 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
       align-content: center;
     }
     .pricing__description {
-      max-width: 600px;
       margin: 0 auto 40px;
     font-weight: 300;
     }
@@ -605,21 +597,12 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
       display: flex;
       justify-content: center;
       gap: 40px;
-      margin: 24px;
-      padding: 24px;
+      align-items: center;
+     
     }
-    div.pricing__middle:nth-child(5) > p:nth-child(1),
-    h4.pricing__plan:nth-child(1),
-    div.pricing__middle:nth-child(2) > p:nth-child(1),
-    h4.pricing__plan:nth-child(3),
-    div.pricing__middle:nth-child(6) > p:nth-child(1),
-    h4.pricing__plan:nth-child(2) {
-      align-content: center;
-      display: flex;
-      justify-content: center;
-    }
-    .pricing__card--1 {
-      width: calc(100%/3);
+   .pricing__card__card--1 {
+      width: 50%;
+      text-align: center;
     }
     div.pricing__middle:nth-child(6) {
       align-content: center;
@@ -633,40 +616,37 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
       width: 100%;
     }
     .pricing__button--1 {
-    color: #f7fafc;
-      background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
-    margin: 8px 16px 24px;
-    }
+      color: #f7fafc;
+        background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
+      }
     .pricing__card--1 > div:nth-child(1) {
       align-content: center;
       justify-content: center;
       display: grid;
-      width: 100%;
     }
-    
-    .pricing__card--2 {
-      background: linear-gradient( 135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100% );
-     color: #fff;
-      border-radius: 6px;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-     padding: 8px 16px;
-      flex-direction: column;
-      width: calc(100%/3);
-    }
+     .pricing__card--2 {
+        background: linear-gradient( 135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100% );
+       color: #fff;
+        border-radius: 6px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+       padding: 8px 16px;
+        flex-direction: column;
+        width: 50%;
+      }
     .pricing__card--2 > div:nth-child(1) {
       color: white;
       padding: 8px;
     }
-    .pricing__card--3 {
-      width: calc(100%/3);
-      align-content: center;
-      justify-content: space-between;
-      display: flex;
-      flex-direction: column;
-    }
-  
+ 
+      .pricing__card--3 {
+        width: 50%;
+        align-content: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+      }
     .pricing__card--3__strip { 
   
       height: 0.5rem;
@@ -705,7 +685,7 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
     .pricing__features {
       list-style: none;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       flex-direction: column;
     }
@@ -735,14 +715,14 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
     .testimonials__container {
       max-width: 1200px;
     }
-     .testimonials__row {
-            display: flex;
-      align-items: center;
-    
-    }
+    .testimonials__row {
+      display: flex;
+align-items: center;
+
+      justify-content: space-between;
+}
     .testimonials__left {
-      width: 100%;
-      padding: 36px;
+      width: 50%;
     }
         .testimonials__intro {
       font-size: 16px;
@@ -753,11 +733,12 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
        .testimonials__img > img:nth-child(1) {
       width: 100%;
     }
-      .testimonials__content {
-        justify-content: space-between;
-        flex-direction: column;
-        display: flex;
-        }
+    .testimonials__content {
+      justify-content: space-between;
+      flex-direction: column;
+      display: flex;
+      width: 45%;
+      }
         .testimonials__title {
           font-size: 36px;
           font-weight: 900;
@@ -800,7 +781,6 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
     ----------------------------
     --------------------------*/
     #sign-up {
-      padding: 80px 5%;
       display: flex;
     }
        #sign-up .row {
@@ -820,8 +800,7 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
     .sign-up__title {
       font-size: 32px;
       font-weight: 900;
-      margin-bottom: 30px;
-      max-width: 1200px;
+    
     }
     .sign-up__buttons {
       display: flex;
@@ -831,12 +810,11 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
       width: 50%;
       max-width: 1200px;
     }
-    .sign-up__button {
-      padding: 14px 25px;
-      border-radius: 500px;
-      cursor: pointer;
-      font-weight: 600;
-      height: fit-content;
+    .sign-up__buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+     align-items: center;
     }
     .sign-up__button--primary {
       color: #fff;
@@ -847,6 +825,7 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
       background: #6415ff;
       border: 2px solid #fff;
       color: #fff;
+      border-radius: 500px;
     }
     
     /*-----------------------------
@@ -888,10 +867,23 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
       justify-content: space-between;
       margin: 24px 0 0 0;
     }
-     div.footer__column:nth-child(1) > h3:nth-child(1) {
-      color: white;
-      padding: 12px;
+    div.footer__column:nth-child(1) > h3:nth-child(1) {
+      margin-bottom: 12px;
     }
+    
+    div.footer__column:nth-child(2) > h3:nth-child(1) {
+      margin-bottom: 12px;
+  }
+  div.footer__column:nth-child(3) > h3:nth-child(1) {
+    margin-bottom: 12px;
+}
+div.footer__column:nth-child(4) > h3:nth-child(1) {
+  margin-bottom: 12px;
+}
+div.footer__column:nth-child(5) > h3:nth-child(1) {
+  margin-bottom: 12px;
+}
+
        .footer__column--anchor {
       list-style:none;
       text-align: start;
@@ -905,37 +897,45 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
       display: flex;
       margin: 0;
     }
-        .footer__logo {
-      max-width: 1200px;
+    .footer__logo {
+      width: 15%;
       display: flex;
         }
         .footer__logo--name {
           color: white;
+          display: flex;
+          flex-direction: column;
         }
-    .footer__logo > img:nth-child(1) {
-      width: 5%;
-      margin-left: 2px;
-    }
+        .footer__logo > img:nth-child(1) {
+          width: 100%;
+          margin-left: 2px;
+        }
     .footer__divider {
       height: 2px;
     }
   
-    
+  .footer__devider--line {
+    height: 2px;
+    width: 100%;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    background: rgb(116, 44, 255);
+  }
     /*-------------------------------
     ---------------------------------
     -------@MEDIA 1024---------------
     ---------------------------------
     -------------------------------*/
     @media (max-width: 1024px) {
-      .header__row,
-      .quality__work--row,
-      .steps__row,
-      .value__row,
-      .testimonials__row,
-      .pricing__cards {
-        flex-direction: column;
-        text-align: center;
-      }
+    .quality__work--row,
+    .steps__row,
+    .value__row,
+    .testimonials__row,
+    .pricing__cards {
+      flex-direction: column;
+      text-align: center;
+      flex-wrap: wrap;
+    }
      .header__description{
           text-align: center;
     display: flex;
