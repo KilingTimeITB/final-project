@@ -375,15 +375,18 @@ div.feature__card:nth-child(6) > div:nth-child(1) > img:nth-child(1) {
 ----------------------------*/
 #quality__work {
   display: flex;
+  padding: 96px 32px;
+}
+.quality__work--img {
+  border-radius: 4px;
+  border: 1px solid rgb(229, 231, 235);
+  position: relative;
+  margin: 0 56px;
+  width: 45%;
 }
 
 .quality__work--container {
-align-items: center;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-margin-bottom: 36px;
-width: 50%;
+  width: 45%;
 }
 
 .quality__work--img > img:nth-child(1) {
@@ -404,23 +407,32 @@ justify-content: start;
 display: flex;
 }
 .quality__work--title {
-  font-size: 56px;
-  font-weight: 650;
 
+  font-size: 40px;
+  font-weight: 900;
+  color: rgb(36, 62, 99);
+  line-height: 1.5;
+  margin: 16px 0;
+  letter-spacing: 0.025em;
 }
 .quality__work--description {
   align-content: center;
-  font-size: 16px;
-  padding: 24px;
+  font-size: 18px;
+  /*! padding: 24px; */
+  color: #7c8ba1;
 }
 .quality__work--button {
-  background: #6415ff;
-  color: #fff;
-  border-radius: 500px;
-  cursor: pointer;
-  font-weight: 600;
   margin-left: 12px;
   display: flex;
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 500px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 /*---------------------------
 -----------------------------
@@ -434,13 +446,16 @@ display: flex;
 .step {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 32px;
 }
-
 .steps__container--row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .steps__subtitle {
   font-size: small;
@@ -475,9 +490,10 @@ display: flex;
   width: 100%;
 }
 .step__number {
-  font-size: 28px;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.52);
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
 }
 .step__text h3 {
   margin-bottom: 5px;
@@ -487,11 +503,44 @@ display: flex;
   color: rgba(0, 0, 0, 0.801);
 }
 div.step:nth-child(1) > div:nth-child(2) > h4:nth-child(1) {
-  display: contents;
-  padding: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
 }
+
 div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
-  display: contents;
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
+}
+div.step:nth-child(3) > div:nth-child(2) > h4:nth-child(1) {
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
+}
+div.step:nth-child(3) > div:nth-child(2) > p:nth-child(2) {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
+}
+div.step:nth-child(2) > div:nth-child(2) > p:nth-child(2) {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
+}
+div.step:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
 }
 
 /*---------------------------
@@ -502,6 +551,9 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
 .value__row {
   width: 50%;
   
+}
+#value {
+  padding: 96px 0;
 }
 
 
@@ -566,20 +618,28 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
         font-weight: 600;
         background-color: #6415ff;
       }
-    
-    
+      .value__img--icon--2 {
+
+        
+      }
+      .value__img--icon {
+        width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+      }
     /*-----------------------
     -------------------------
     ----------PRICING--------
     -------------------------
     -----------------------*/
     #pricing {
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      }
+      padding: 96px 0;
+  }
+  
     .pricing__row {
         display: flex;
         flex-direction: column;
@@ -786,8 +846,8 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
     ------------------------------*/
     #testimonials {
       width: 100%;
+      padding: 96px 0;
     }
-    
     .testimonials__img {
       width: 100%;
     }
@@ -859,6 +919,7 @@ div.step:nth-child(2) > div:nth-child(2) > h4:nth-child(1) {
     --------------------------*/
     #sign-up {
       display: flex;
+      padding: 96px 0;
     }
   #sign-up .row {
         position: relative;
