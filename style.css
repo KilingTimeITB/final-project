@@ -388,11 +388,6 @@ div.feature__card:nth-child(6) > div:nth-child(1) > img:nth-child(1) {
 .quality__work--container {
   width: 45%;
 }
-
-.quality__work--img > img:nth-child(1) {
-  width: 100%;
-}
-
 .quality__work--img ,
 .quality__work--img > img:nth-child(1) {
   width: 100%;
@@ -548,10 +543,7 @@ div.step:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
 --------------VALUE----------
 -----------------------------
 ---------------------------*/
-.value__row {
-  width: 50%;
-  
-}
+
 #value {
   padding: 96px 0;
 }
@@ -573,7 +565,6 @@ div.step:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
 .value__img--wrapper > img:nth-child(1) {
   width: 100%;
   margin: 24px;
-  font-size: 36px;
 }
 
 
@@ -627,9 +618,7 @@ div.step:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
       .value__img--icon--2 {
  background-color: #feb2b2;
             }
-            .value__img--wrapper > img:nth-child(1) {
-              width: 100%;
-          }
+   
             
       .value__img--icon {
         width: 24px;
@@ -676,21 +665,27 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
     #pricing {
       padding: 96px 0;
   }
-  
-    .pricing__row {
+  .pricing__container {
+    padding: 96px 0;
+}
+ .pricing__row {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
- 
-    .pricing_top {
-    
-    display: flex;
+ .pricing_top {
+     display: flex;
     justify-content: space-between;
     align-items: center;
     }
     .pricing__intro {
       font-size: 16px;
+      color: #6415ff;
+      letter-spacing: 1.6px;
+      font-weight: 700;
+      align-items: center;
+      display: flex;
+      justify-content: center;
     }
     .pricing__middle {
     justify-content: space-between;
@@ -699,69 +694,107 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
     margin: 12px;
     align-items: center;
      }
-    .pricing__bottom {
-    align-content: center;
-    display: flex;
-    justify-content: center;
-    }
-    .pricing__title {
-      font-size: 36px;
+     .pricing__bottom {
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      padding: 0.75rem 2rem;
       font-weight: 700;
+      color: rgb(247 250 252);
+      transition: all 300ms ease;
+      width: 100%;
+      border-radius: 9999px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      }
+    .pricing__title {
+      font-size: 48px;
+      font-weight: 900;
       align-items: center;
+      display: flex;
+      justify-content: center;
+      color: rgb(36, 62, 99);
+      line-height: 1.5;
+      margin: 16px 0;
+      letter-spacing: 0.025em;
     }
     .pricing__description {
-    margin: 0 auto 40px;
-    font-weight: 300;
-    }
-    .pricing__cards {
+      font-size: 18px;
+      font-weight: 500;
+      color: #7c8ba1;
+      line-height: 1.625;
+      max-width: 576px;
+      text-align: center;
       display: flex;
-      justify-content: space-between;
-      gap: 40px;
-
+  }
+    .pricing__cards {
+    width: 100%;
+      position: relative;
+      margin-top: 4rem;
+      display: flex;
+       border-radius: 0.5rem;
+      background-color: rgb(255 255 255);
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-right: 2rem;
+      padding-top: 0.5rem;
+      text-align: center;
     }
-    .pricing__card--1 {
+
+    h4.pricing__plan:nth-child(2) {
+      color: #1a202c;
+      font-size: 20px;
+  }
+   .pricing__card--1 {
       width: 50%;
       border: 2px solid rgba(199, 196, 206, 0.692);
       border-radius: 20px;
       align-items: center;
   }
   .pricing__card--1__divider--line {
-  height: 2px;
-  width: 100%;
-  margin-bottom: 12px;
-  margin-top: 12px;
-  background: linear-gradient( 135deg, rgb(191, 193, 235) 0%, rgb(102, 126, 234) 100% );
-  
-    }
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+      }
 
   div.pricing__middle:nth-child(6) {
     align-content: center;
     justify-content: center;
     }
     .pricing__card--1__strip {
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
       background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
       height: 12px;
-      width: 250px;
+      width: 350px;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
     }
     .pricing__button--1 {
       color: #f7fafc;
       background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
       margin: 24px;
+      border-radius: 250px;
+      width: 200px;
+      height: 42px;
       }
-    .pricing__card--1 > div:nth-child(1) {
-      align-content: center;
-      justify-content: center;
-      display: grid;
+      .pricing__card--1 > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        /*! padding-top: 2rem; */padding-bottom: 2rem;
     }
+    
     .pricing__card--1 > div:nth-child(2) > p:nth-child(1) {
       font-weight: 700;
   }
-  
+  .pricing__card--1 > div:nth-child(3) > p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    color: #1a202c;
+}
+
      .pricing__card--2 {
       background: linear-gradient( 135deg, rgb(77, 81, 163) 0%, rgb(102, 126, 234) 100% );
       color: #fff;
@@ -814,7 +847,6 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
         border-radius: 20px;
       }
     .pricing__card--3__strip { 
-      height: 0.5rem;    
       border-top-left-radius: 0.5rem;
       border-top-right-radius: 0.5rem;
       background: linear-gradient( 115deg, rgb(219, 68, 68) 0%, rgb(254, 178, 178) 100% );
@@ -841,34 +873,40 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
       margin-bottom: 12px;
       margin-top: 12px;
       background: linear-gradient( 135deg, rgb(191, 193, 235) 0%, rgb(102, 126, 234) 100% );
-    
-    
      }
      .pricing__plan {
-    margin-bottom: 10px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-     }
+      margin-bottom: 10px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+       }
      .pricing__price {
-      font-size: 32px;
-      font-weight: 600;
       display: flex;
       justify-content: center;
-    } 
+      font-weight: bold;
+      line-height: 1.625;
+      font-size: 48px;
+      margin: 4px 0;
+    }
     .pricing__duration {
-      font-size: 24px;
       display: flex;
       justify-content: center;
+      color: #a0aec0;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+      line-height: 1.625;
     }
     .pricing__features {
       list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      line-height: 24px;
-      font-weight: 200;
+      margin-top: 20px;
+      font-weight: 500;
+      color: #718096;
+      font-size: 16px;
+      line-height: 2.5;
+      letter-spacing: 0.025em;
     }
     .pricing__button {
       padding: 12px 20px;
@@ -889,10 +927,7 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
       width: 100%;
     }
     
-   .testimonials__img > img:nth-child(1) {
-      width: 50%;
-    }
-   
+ 
     .testimonials__row {
     display: flex;
     align-items: center;
@@ -1136,51 +1171,9 @@ div.footer__column:nth-child(5) > h3:nth-child(1) {
             text-align: center;
             color: white;
         }
-        @media (max-width: 1024px) {
-          .quality__work--row,
-          .steps__row,
-          .value__row,
-          .testimonials__row,
-          .pricing__cards {
-            flex-direction: column;
-            text-align: center;
-            flex-wrap: wrap;
-            display: flex;
-          }
-         .header__description{
-              text-align: center;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            }
-         .header__row--row {
-              flex-direction: column;
-              align-items: center;
-            }
-            .features__grid {
-              grid-template-columns: repeat(2, 1fr);
-              color: white;
-            }
-              #quality__work {
-                align-content: center;
-                flex-direction: column;
-              }
-          
-             .footer__columns {
-                flex-direction: column;
-                gap: 40px;
-                text-align: center;
-                color: white;
-            }
-            #footer {
-              padding: 80px 32px;
-              align-items: center;
-          }
-          
-        
+     
       }
     
-  }
     /*--------------------------
     ----------------------------
     ---------@MEDIA 768---------
@@ -1200,9 +1193,7 @@ text-align: center;
  .nav__links {
  display: none;
    }
-.header__description {
-  font-size: 36px;
- }
+
 .input-wrapper input,
 .input-wrapper__button {
  width: 100%;
