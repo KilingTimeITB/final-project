@@ -386,7 +386,8 @@ div.feature__card:nth-child(6) > div:nth-child(1) > img:nth-child(1) {
   width: 45%;
 }
 .quality__work--container {
-  width: 45%;
+  width: 50%;
+  margin-right: 64px;
 }
 .quality__work--img ,
 .quality__work--img > img:nth-child(1) {
@@ -402,13 +403,13 @@ justify-content: start;
 display: flex;
 }
 .quality__work--title {
- font-size: 40px;
-  font-weight: 900;
-  color: rgb(36, 62, 99);
-  line-height: 1.5;
-  margin: 16px 0;
-  letter-spacing: 0.025em;
-}
+  font-size: 44px;
+   font-weight: 850;
+   color: rgb(36, 62, 99);
+   line-height: 1.25;
+   margin: 16px 0;
+   letter-spacing: 0.025em;
+ }
 .quality__work--description {
   align-content: center;
   font-size: 18px;
@@ -727,7 +728,7 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
       align-items: center;
   }
   .pricing__cards {
-    width: 100%;
+    /*! width: 100%; */
       position: relative;
       margin-top: 4rem;
       display: flex;
@@ -1034,6 +1035,9 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
     --------------------------*/
     #sign-up {
       padding: 96px 96px;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
     }
   #sign-up .row {
         position: relative;
@@ -1052,6 +1056,7 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
       font-size: 30px;
       font-weight: 700;
       line-height: 1.5;
+      width: 50%;
      }
      .sign-up__buttons {
       /*! margin-top: 45px; */
@@ -1263,6 +1268,12 @@ display: contents;
 font-size: larger;
 text-align: center;
 }
+.quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonials__description, .testimonials__img {
+  width: 100%;
+  max-width: 448px;
+}
+
+
  .nav__links {
  display: none;
    }
@@ -1292,6 +1303,9 @@ display: grid;
   .quality__work--row {
  flex-direction: column;
    }
+   #quality .row, #values .row {
+    flex-direction: column-reverse;
+  }
  .steps__container--row {
  display: flex;
  justify-content: space-between;
@@ -1362,3 +1376,8 @@ flex-direction: column;
               font-size: 24px;
               }
     }
+
+  }
+  @media (max-width: 768px) {
+  
+  }
