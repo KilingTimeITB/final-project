@@ -84,8 +84,9 @@ color: white;
 }
 .nav__row--row {
   padding-top: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
-
 .nav__links {
   display: flex;
   list-style: none;
@@ -173,6 +174,8 @@ cursor: pointer;
 -------------------------------*/
 .header {
   padding: 96px 0;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .header__container {
   display: flex;
@@ -391,7 +394,7 @@ div.feature__card:nth-child(6) > div:nth-child(1) > img:nth-child(1) {
 }
 .quality__work--img ,
 .quality__work--img > img:nth-child(1) {
-  width: 60%;
+  width: 100%;
 }
 .quality__work--intro {
 font-size: 16px;
@@ -434,9 +437,10 @@ display: flex;
 ------------STEPS------------
 -----------------------------
 ---------------------------*/
-#steps__row {
+#steps {
   padding: 0 32px;
   padding: 96px 0;
+  width: 60%;
 }
 .step {
   display: flex;
@@ -451,6 +455,7 @@ display: flex;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  gap: 30px;
 }
 .steps__subtitle {
   font-size: 16px;
@@ -462,7 +467,7 @@ display: flex;
 .steps__subtitle > span:nth-child(1) {
   margin-right: 90%;
 }
-.steps__content {
+.steps__right {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -588,7 +593,8 @@ div.step:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
     .value__cards {
       display: flex;
       margin-bottom: 30px;
-      justify-content: space-between;
+      justify-content: space-around;
+      gap: 80px;
     }
     .value__card {
       /*! flex-direction: column; */
@@ -736,6 +742,9 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
       padding-top: 0.5rem;
       text-align: center;
     color: rgb(26 32 44);
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 32px;
     }
     h4.pricing__plan:nth-child(1) {
       font-size: 20px;
@@ -1217,8 +1226,15 @@ div.footer__column:nth-child(5) > h3:nth-child(1) {
     ---------------------------------
     -------------------------------*/
     @media (max-width: 1024px) {
+      .btn__menu {
+        display: contents;
+      }
+      .nav__link--wrapper {
+        display: none;
+      }
+
       .quality__work--row,
-      .steps__row,
+      .steps__left,
       .value__row,
       .testimonials__row,
       .pricing__cards {
@@ -1237,7 +1253,16 @@ div.footer__column:nth-child(5) > h3:nth-child(1) {
           flex-direction: column;
           align-items: center;
         }
-        .features__grid {
+
+      .header__left {
+        width:90%;
+        text-align: center;
+      }
+ .header__right {
+width:90%;
+
+ }
+ .features__grid {
           grid-template-columns: repeat(2, 1fr);
           color: white;
         }
@@ -1245,7 +1270,38 @@ div.footer__column:nth-child(5) > h3:nth-child(1) {
             align-content: center;
             flex-direction: column;
           }
-        .footer__columns {
+                .quality__work--container {
+                  text-align: center;
+                  width: 100%;
+                  margin: 0 auto;
+                  padding: 32px;
+                }
+                .quality__work--img {
+                  width: 100%;
+                  margin: 0 auto;
+                  padding: 32px;
+                }
+                .steps__container--row{
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+    }            
+  .steps__right {
+    text-align: center;
+    width: 100%;}
+.value__content {
+width: 100%;
+text-align: center;
+ }
+ .value__container--row {
+  flex-direction: column;
+      align-items: center;
+      display: flex;}
+.value__img--wrapper {
+  width: 100%;
+  ;
+}
+ .footer__columns {
             flex-direction: column;
             gap: 40px;
             text-align: center;
@@ -1296,6 +1352,7 @@ grid-template-columns: repeat(1, 1fr);
 justify-content: space-between;
 align-content: center;
 display: grid;
+text-align: center;
 }
 .feature__icon {
  flex-direction: unset;
@@ -1311,7 +1368,7 @@ display: grid;
  justify-content: space-between;
  flex-direction: column;
  }
- .steps__row,
+ .steps__left,
 .testimonials__row {
 flex-direction: column;
 align-items: center;
@@ -1376,8 +1433,3 @@ flex-direction: column;
               font-size: 24px;
               }
     }
-
-  }
-  @media (max-width: 768px) {
-  
-  }
