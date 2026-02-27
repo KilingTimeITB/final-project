@@ -330,7 +330,7 @@ h3.feature__title {
       margin-left: 16px;
     }
    div.feature__card:nth-child(1) > div:nth-child(2) > h4:nth-child(1) {
-    display: flex;
+   
     font-size: 1.5em;
     font-weight: bold;
     color: #243e63;
@@ -340,7 +340,7 @@ div.feature__card:nth-child(3) > div:nth-child(2) > h4:nth-child(1),
 div.feature__card:nth-child(4) > div:nth-child(2) > h4:nth-child(1),
 div.feature__card:nth-child(5) > div:nth-child(2) > h4:nth-child(1),
 div.feature__card:nth-child(6) > div:nth-child(2) > h4:nth-child(1) {
-  display: flex;
+
   font-size: 1.5em;
   font-weight: bold;
 }
