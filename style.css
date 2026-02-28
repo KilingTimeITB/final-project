@@ -995,6 +995,13 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
     .testimonials__customer {
       display: flex;
         }
+
+        .customers__bio {
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+      }
+      
     .customers__experience {
       color: #4a5568;
       line-height: 1.625;
@@ -1009,7 +1016,7 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
     }
     .customer__img > img:nth-child(1) {
       border-radius: 50%;
-      width: 30%;
+      width: 120px;
     }
     .customer__role {
       color: #7c8ba1;
@@ -1017,6 +1024,23 @@ div.value__card:nth-child(1) > div:nth-child(2) > p:nth-child(2) {
       line-height: 1.5;
   }
 
+  .testimonials__left-arrow {
+    width: 32px;
+    background: #edf2f7;
+    border-radius: 50%;
+   }
+   .testimonials__right-arrow {
+     width: 32px;
+    background: #edf2f7;
+    border-radius: 50%;
+    transition: all 300ms ease;
+    }
+    div.testimonials__arrows {
+      background: #edf2f7;
+      border-radius: 50%;
+      transition: all 300ms ease;
+      display: flex;
+  }
 
    /*--------------------------
     ----------------------------
